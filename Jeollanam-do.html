@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전라남도의 맛집</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>전라남도의 맛집</h1>
+    <p><label for="district">지역을 선택하세요:</label></p>
+    <ul>
+    <li><a href="#naju">나주시</a></li>
+    <li><a href="#yeoju">여주시</a></li>
+    <li><a href="#mokpo">목포시</a></li>
+    <li><a href="#boseong">보성군</a></li>
+
+</ul>
+<hr><br><h4>사진을 누르면 네이버 페이지로 이동합니다.</h4><br><br>
+<p><h2 id="naju">나주시 맛집</h2>
+<ul>
+    <li>&nbsp;&nbsp;왕곡가든<br>
+        <a href="https://map.naver.com/p/entry/place/17162340?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="jeonnampic/naju1.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;정동 나주혁신점<br>
+        <a href="https://map.naver.com/p/entry/place/1629791271?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="jeonnampic/naju2.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;동그라미테이블<br>
+        <a href="https://map.naver.com/p/entry/place/1515005189?entry=psb&placePath=%2Fhome" target="_blank"><img src="jeonnampic/naju3.png"></a>
+    </li><br>
+</ul></p><br><br><br>
+
+<p><h2 id="yeoju">여주시 맛집</h2>
+    <ul>
+        <li>&nbsp;&nbsp;상무초밥 여수낭만포차거리점<br>
+            <a href="https://map.naver.com/p/entry/place/1271189319?entry=psb&placePath=%2Fhome" target="_blank"><img src="jeonnampic/yeoju1.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;바다식탁<br>
+            <a href="https://map.naver.com/p/entry/place/1647293481?entry=psb&placePath=%2Fhome" target="_blank"><img src="jeonnampic/yeoju2.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;라벤나<br>
+            <a href="https://map.naver.com/p/entry/place/1934901778?entry=psb&placePath=%2Fhome" target="_blank"><img src="jeonnampic/yeoju3.png"></a>
+        </li><br>
+    </ul></p><br><br><br>
+
+<p><h2 id="mokpo">목포시 맛집</h2>
+    <ul>
+        <li>&nbsp;&nbsp;뜰채<br>
+            <a href="https://map.naver.com/p/entry/place/34971671?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="jeonnampic/mokpo1.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;독천식당<br>
+            <a href="https://map.naver.com/p/entry/place/1300792522?entry=psb&placePath=%2Fhome" target="_blank"><img src="jeonnampic/mokpo2.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;영란회집<br>
+            <a href="https://map.naver.com/p/entry/place/11665699?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="jeonnampic/mokpo3.png"></a>
+        </li><br>
+    </ul></p><br><br><br>
+
+<p><h2 id="boseong">보성군 맛집</h2>
+    <ul>
+        <li>&nbsp;&nbsp;특미관<br>
+            <a href="https://map.naver.com/p/entry/place/11724683?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="jeonnampic/boseong1.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;보성녹차떡갈비원조<br>
+            <a href="https://map.naver.com/p/entry/place/12778814?entry=psb&placePath=%2Fhome" target="_blank"><img src="jeonnampic/boseong2.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;율포봇재가든<br>
+            <a href="https://map.naver.com/p/entry/place/17224708?entry=psb&placePath=%2Fhome" target="_blank"><img src="jeonnampic/boseong3.png"></a>
+        </li><br>
+    </ul></p><br><br><br>
+    <script>
+        // 페이지가 일정 부분 이상 스크롤되면 버튼을 표시
+        window.onscroll = function() {scrollFunction()};
+      
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollToTopButton").style.display = "block";
+          } else {
+            document.getElementById("scrollToTopButton").style.display = "none";
+          }
+        }
+      
+        // 버튼 클릭 시 맨 위로 이동
+        function scrollToTop() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+      </script>
+</body>
+</html>

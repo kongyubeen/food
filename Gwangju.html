@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광주광역시의 맛집</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>광주광역시의 맛집</h1>
+    <p><label for="district">지역을 선택하세요:</label></p>
+    <ul>
+    <li><a href="#광주광역시">광주광역시</a></li>
+    </ul>
+<hr><br><h4>사진을 누르면 네이버 페이지로 이동합니다.</h4><br><br>
+<p><h2 id="광주광역시">광주광역시 맛집</h2>
+<ul>
+    <li>&nbsp;&nbsp;연어하다 광주본점<br>
+        <a href="https://map.naver.com/p/entry/place/1431496557?c=15.00,0,0,0,dh" target="_blank"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240412_94%2F1712893459891iiTtH_JPEG%2F1712729501640.jpg" width="150" height="100"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;명화식육식당<br>
+        <a href="https://map.naver.com/p/entry/place/19877647?c=15.00,0,0,0,dh" target="_blank"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210125_9%2F16115766035301RepQ_JPEG%2F8wPI714Xg2DKvt_B8gF13eVU.jpg" width="150" height="100"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;매운돼지등갈비찜<br>
+        <a href="https://map.naver.com/p/entry/place/16113008?c=15.00,0,0,0,dh" target="_blank"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230622_16%2F1687420090693lG6WH_JPEG%2FKakaoTalk_20230622_161702275_07.jpg" width="150" height="100"></a>
+    </li><br>
+</ul></p><br><br><br>
+<button onclick="scrollToTop()" id="scrollToTopButton" title="위로 이동">⇑</button>
+
+<script>
+  // 페이지가 일정 부분 이상 스크롤되면 버튼을 표시
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollToTopButton").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopButton").style.display = "none";
+    }
+  }
+
+  // 버튼 클릭 시 맨 위로 이동
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+</body>
+</html>

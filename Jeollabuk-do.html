@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전라북도의 맛집</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>전라북도의 맛집</h1>
+    <p><label for="district">지역을 선택하세요:</label></p>
+    <ul>
+    <li><a href="#전주시">전주시</a></li>
+    <li><a href="#군산시">군산시</a></li>
+    <li><a href="#익산시">익산시</a></li>
+</ul>
+<hr><br><h4>사진을 누르면 네이버 페이지로 이동합니다.</h4><br><br>
+<p><h2 id="전주시">전주시 맛집</h2>
+    <button onclick="scrollToTop()" id="scrollToTopButton" title="위로 이동">⇑</button>
+
+<script>
+  // 페이지가 일정 부분 이상 스크롤되면 버튼을 표시
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollToTopButton").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopButton").style.display = "none";
+    }
+  }
+
+  // 버튼 클릭 시 맨 위로 이동
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+<ul>
+    <li>&nbsp;&nbsp;아카시아<br>
+        <a href="https://map.naver.com/p/entry/place/1137777642?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Jeollabuk-do/Jeonju-si1.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;레이지크해비탯 객사점<br>
+        <a href="https://map.naver.com/p/entry/place/1099250608?entry=psb&placePath=%2Fhome" target="_blank"><img src="Jeollabuk-do/Jeonju-si2.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;비레레<br>
+        <a href="https://map.naver.com/p/entry/place/1402135242?entry=psb&placePath=%2Fhome" target="_blank"><img src="Jeollabuk-do/Jeonju-si3.png"></a>
+    </li><br>
+</ul></p><br><br><br>
+
+<p><h2 id="군산시">군산시 맛집</h2>
+    <ul>
+        <li>&nbsp;&nbsp;지린성<br>
+            <a href="https://map.naver.com/p/entry/place/17150328?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Jeollabuk-do/Gunsan-si1.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;복성루<br>
+            <a href="https://map.naver.com/p/entry/place/12866360?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Jeollabuk-do/Gunsan-si2.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;모트<br>
+            <a href="https://map.naver.com/p/entry/place/1454101010?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Jeollabuk-do/Gunsan-si3.png"></a>
+        </li><br>
+    </ul></p><br><br><br>
+
+<p><h2 id="익산시">익산시 맛집</h2>
+    <ul>
+        <li>&nbsp;&nbsp;초미당 첫번째<br>
+            <a href="https://map.naver.com/p/entry/place/1814406123?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Jeollabuk-do/Iksan-si1.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;한일식당<br>
+            <a href="https://map.naver.com/p/entry/place/21037566?entry=psb&placePath=%2Fhome" target="_blank"><img src="Jeollabuk-do/Iksan-si2.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;맛동순두부<br>
+            <a href="https://map.naver.com/p/entry/place/11818003?entry=psb&placePath=%2Fhome" target="_blank"><img src="Jeollabuk-do/Iksan-si3.png"></a>
+        </li><br>
+    </ul></p><br><br><br>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* style.css */
+
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #f2faf2, #f2f9fd 25%, #fbf1fe 50%, #fbeff1 75%); /* 연한 연두색, 하늘색, 보라색, 핑크색 그라데이션 배경 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 제목 스타일 */
+h1 {
+    color: #1d4553;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+/* 맛집별 이름 스타일 */
+h2 {
+    color: #006699;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* 지역 선택 레이블 스타일 */
+label {
+    color: #333;
+    font-size: 18px;
+}
+
+/* 지역 선택 링크 스타일 */
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease; /* 색깔 변화에 0.3초 동안의 transition 추가 */
+}
+
+a:hover {
+    color: #0099cc; /* 링크에 호버시 진한 하늘색으로 색상 변경 */
+    text-decoration: underline;
+}
+
+/* ul 요소 스타일 */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* li 요소 스타일 */
+li {
+    width: calc(33% - 10px);
+    margin-bottom: 20px;
+    background-color: #eafaea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* 배경색 변화에 0.3초 동안의 transition 추가 */
+}
+
+li:hover {
+    background-color: #ffffff; /* 마우스 호버시 흰색으로 배경색 변경 */
+}
+
+/* 사진 스타일 */
+li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+li img:hover {
+    transform: scale(1.05);
+}
+
+/* 섹션 구분선 스타일 */
+hr {
+    border: none;
+    border-top: 2px solid #0b3f50;
+    margin: 40px 0;
+}
+
+/* 반응형 스타일 */
+@media only screen and (max-width: 600px) {
+    li {
+        width: 100%; /* 작은 화면에서는 한 줄에 하나씩 표시 */
+    }
+}
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 50%;
+  }
+
+  #scrollToTopButton:hover {
+    background-color: #0056b3;
+  }

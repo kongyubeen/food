@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세종특별자치시의 맛집</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<br><h4>사진을 누르면 네이버 페이지로 이동합니다.</h4><br><br>
+<hr>
+<p><h2 id="세종특별자치시">세종특별자치시 맛집</h2>
+<ul>
+    <li>&nbsp;&nbsp;장원갑칼국수 세종본점<br>
+        <a href="https://map.naver.com/p/entry/place/1298661194?entry=psb&placePath=%2Fhome" target="_blank"><img src="Sejong/Sejong1.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;부강옥 세종부강본점<br>
+        <a href="https://map.naver.com/p/entry/place/1982933000?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Sejong/Sejong2.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;에드가 세종나성점<br>
+        <a href="https://map.naver.com/p/entry/place/1197996343?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Sejong/Sejong3.png"></a>
+    </li><br>
+</ul></p><br><br><br>
+<button onclick="scrollToTop()" id="scrollToTopButton" title="위로 이동">⇑</button>
+
+<script>
+  // 페이지가 일정 부분 이상 스크롤되면 버튼을 표시
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollToTopButton").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopButton").style.display = "none";
+    }
+  }
+
+  // 버튼 클릭 시 맨 위로 이동
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+</body>
+</html>

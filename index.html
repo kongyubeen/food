@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        14조 웹사이트
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        select {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        .popup {
+            width: 20vw;
+            height: 20vh;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        .popup.show {
+            display: flex;
+        }
+        .popup-content {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .popup-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .popup-button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .close-button {
+            background-color: #f44336;
+            color: white;
+        }
+        .survey-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #f1f8f1, #edf2f6 25%, #f4eef6 50%, #f6eff0 75%);
+            margin: 0;
+            padding: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            margin-top: 20px;
+            border-bottom: 2px solid #ccc;
+            border: 1px solid #c2c6c9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f8ff;
+        }
+
+        #logo {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        select {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        h3 {
+            font-size: 11px;
+        }
+        main {
+        display: flex;
+        flex-direction: row; /* 휴대폰 화면에서는 세로로 배치 */
+        margin: 20px;
+    }
+
+    /* section 내용 변경 */
+    section {
+        flex: 2;
+        height: 700px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    /* aside 내용 변경 */
+    aside {
+        flex: 1;
+        background-color: #f0f8ff;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+
+    /* 휴대폰 화면에서 aside가 section 아래로 이동 */
+    @media (max-width: 768px) {
+        main {
+            flex-direction: column; /* 가로 배치로 변경 */
+        }
+
+        section {
+            flex: 2; /* 섹션이 더 넓도록 설정 */
+            height: auto;
+            margin-bottom: 20px; /* 오른쪽 여백 추가 */
+        }
+
+        aside {
+            flex: 1; /* 휴대폰 화면에서는 aside가 섹션보다 더 좁게 설정 */
+            margin-top: 20px; /* aside 위 여백 추가 */
+        }
+    }
+        
+        footer {
+            width: 100%;
+            border-top: 2px solid #ccc;
+            padding: 20px;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #address, #customer {
+            margin: 0;
+        }
+        .map {
+            position: relative;
+        } 
+        
+
+
+    </style>
+    </head>
+    <body>
+        <header><h1>전국 맛집</h1></header>
+        
+        <header>
+            <div id="logo">전국 맛집 지도</div>
+        </header>
+        
+        <main>
+            <section>
+                <h3>지도를 클릭하면 해당 지역으로 이동합니다.</h3>
+                <div class="map">
+                <img src="picture.png" alt="map" usemap="#planetmap">
+                <map name="planetmap">
+                    <area target="_self" alt="강원" title="강원" href="Gangwon-do.html" coords="575,56,571,63,566,80,559,89,545,92,522,90,496,85,485,91,474,87,462,89,457,83,445,86,440,91,452,111,456,106,458,116,476,116,476,132,492,143,482,151,481,165,479,183,488,180,501,188,510,193,502,203,504,214,497,220,497,245,505,249,514,247,514,238,520,236,529,244,542,239,557,244,552,254,565,255,573,258,585,263,603,271,605,263,617,267,630,271,639,268,654,277,653,266,666,263,666,248,661,236,653,228,652,220,645,214,644,202,638,192,639,186,628,175,619,166,619,153,611,140,597,123,599,113,588,89" shape="poly">
+                    <area target="_self" alt="경기" title="경기" href="Gyeonggi-do.html" coords="437,90,422,103,415,112,407,124,393,129,388,150,372,156,373,184,384,169,390,177,400,176,409,176,420,167,429,170,436,174,435,184,441,193,436,200,431,207,425,204,413,202,407,204,403,192,402,187,392,194,389,214,394,222,366,217,368,232,377,226,385,241,394,239,388,252,393,257,397,266,409,270,421,269,430,265,439,272,446,275,454,270,463,259,473,258,482,256,485,245,498,240,497,224,504,214,502,202,511,194,499,187,488,179,479,184,480,170,479,151,493,144,474,132,475,118,460,116,456,108,452,114,445,101" shape="poly">
+                    <area target="_self" alt="서울" title="서울" href="Seoul.html" coords="423,168,412,175,402,181,398,187,404,193,407,201,416,198,429,205,435,197,437,186,432,174" shape="poly">
+                    <area target="_self" alt="인천" title="인천" href="Incheon.html" coords="372,155,365,144,350,152,343,143,335,151,342,153,359,152,352,164,359,167,353,174,360,176,373,171,373,186,375,179,373,186,364,187,352,194,356,199,364,195,374,193,381,192,379,205,388,214,388,206,391,195,393,188,395,181,388,178,375,176,371,162" shape="poly">
+                    <area target="_self" alt="세종" title="세종" href="Sejong.html" coords="428,296,417,304,428,319,425,333,432,346,438,337,447,333,447,323,439,317,440,306,432,301" shape="poly">
+                    <area target="_self" alt="충북" title="충북" href="Chungcheongbuk-do.html" coords="490,245,476,258,464,260,456,269,442,279,455,292,456,299,447,300,445,309,452,315,444,315,448,326,450,335,457,339,464,341,464,347,459,361,468,371,468,388,477,390,488,400,505,393,506,380,518,371,509,371,500,367,501,352,504,332,492,324,503,313,510,303,525,308,525,294,538,294,544,289,559,300,566,296,565,282,577,271,588,265,576,257,560,251,551,254,556,244,544,237,531,246,519,234,513,247" shape="poly">
+                    <area target="_self" alt="대전" title="대전" href="Daejeon.html" coords="447,330,444,343,433,347,432,361,438,368,445,361,453,372,465,364,458,352,469,344,462,348,460,335,452,340" shape="poly">
+                    <area target="_self" alt="충남" title="충남" href="Chungcheongnam-do.html" coords="455,294,447,286,445,275,432,269,421,268,404,273,392,274,388,261,379,254,372,264,365,254,362,246,353,252,360,266,348,254,340,254,345,269,336,280,329,269,321,272,316,283,322,293,334,286,330,300,335,307,333,328,343,333,340,320,342,307,347,311,350,319,352,338,353,347,352,358,346,368,360,374,361,381,365,389,371,389,384,385,388,373,406,375,409,387,420,383,437,383,447,397,460,399,468,395,470,380,463,371,454,370,446,365,441,370,435,359,429,349,430,340,427,332,428,323,425,313,419,301,429,297,440,307" shape="poly">
+                    <area target="_self" alt="전북" title="전북" href="Jeollabuk-do.html" coords="352,394,371,394,387,385,387,374,406,374,413,387,425,386,432,383,441,397,454,401,459,393,465,401,472,393,482,398,496,395,496,407,495,416,488,423,474,422,469,433,466,443,458,456,461,468,465,477,458,480,450,493,438,486,434,489,412,488,406,493,397,488,403,481,397,478,399,471,393,470,388,475,379,471,374,463,365,466,364,476,356,481,352,477,342,479,337,472,330,467,336,455,345,454,358,451,356,445,350,444,339,444,336,435,346,429,356,419,371,419,362,411,373,405,359,405,352,405" shape="poly">
+                    <area target="_self" alt="전남" title="전남" href="Jeollanam-do.html" coords="372,465,383,474,388,481,395,469,401,482,403,490,409,493,426,492,437,494,446,486,456,503,464,518,476,536,471,540,461,549,452,545,448,554,455,560,470,557,467,569,469,586,468,595,465,603,461,583,460,570,456,576,453,583,443,579,447,570,439,556,430,558,426,572,437,582,439,591,426,589,436,613,423,603,415,609,413,597,402,593,396,592,406,582,413,570,407,568,406,573,393,574,382,582,374,600,394,601,406,604,398,607,387,606,383,623,374,620,378,611,368,607,358,602,363,609,366,624,356,621,365,636,361,651,336,641,324,639,336,631,345,641,358,636,347,621,335,616,341,603,350,610,361,589,362,576,352,580,356,591,340,609,332,611,322,613,318,606,323,592,318,578,306,584,309,600,295,605,282,603,290,588,305,574,302,563,309,554,315,565,315,547,307,544,301,541,296,562,285,573,280,579,274,569,267,560,263,547,279,539,277,554,278,564,286,563,282,550,278,531,292,535,293,546,292,553,307,538,307,527,303,519,295,528,291,523,282,501,292,512,305,506,313,500,325,512,334,507,323,500,320,488,323,477,332,471,339,480,355,504,359,508,363,516,369,519,383,517,391,515,395,510,399,505,390,505,386,495,381,492,372,495,366,489,353,496,341,485,350,481,356,481,366,477,366,468" shape="poly">
+                    <area target="_self" alt="경북" title="경북" href="Gyeongsangbuk-do.html" coords="592,264,601,273,608,264,616,268,625,261,633,268,639,264,646,266,651,273,659,262,669,257,671,267,675,274,673,299,677,309,676,318,668,329,673,345,668,358,661,373,664,388,662,401,659,411,669,410,683,405,683,414,676,425,672,441,668,459,658,455,647,459,640,450,627,451,625,458,617,460,606,457,596,462,588,467,563,463,562,453,571,444,579,446,589,430,589,418,582,407,590,398,598,400,605,389,600,382,591,385,580,380,578,374,557,364,557,377,566,380,568,392,575,398,574,408,567,411,559,421,558,415,546,425,555,428,545,437,553,445,543,448,548,455,557,455,541,454,529,449,526,442,520,432,519,426,509,427,495,415,496,398,507,395,507,376,519,373,514,367,508,368,502,364,503,334,495,322,505,319,508,309,516,306,523,312,526,293,539,300,545,289,558,303,568,295,566,285" shape="poly">
+                    <area target="_self" alt="대구" title="대구" href="Daegu.html" coords="559,364,576,371,578,376,588,387,600,383,609,383,603,388,599,398,590,396,584,407,591,430,583,447,568,444,562,455,548,459,546,443,554,446,549,435,552,428,563,415,575,410,576,398,570,395,570,381,556,379" shape="poly">
+                    <area target="_self" alt="울산" title="울산" href="Ulsan.html" coords="648,459,643,451,626,451,626,457,617,457,615,472,621,476,628,488,633,495,640,498,642,503,650,500,648,487,648,476,657,484,665,475,663,467,656,459" shape="poly">
+                    <area target="_self" alt="부산" title="부산" href="Busan.html" coords="642,521,628,524,625,524,619,533,620,541,608,538,601,526,593,533,594,522,613,514,619,506,625,497,637,496,644,504,638,511" shape="poly">
+                    <area target="_self" alt="제주도" title="제주도" href="Jeju-do.html" coords="320,719,334,718,349,718,356,724,361,734,359,742,353,751,339,753,325,754,307,756,300,752,290,756,281,753,274,740,284,729,296,722,308,722" shape="poly">
+                    <area target="_self" alt="경남" title="경남" href="Gyeongsangnam-do.html" coords="498,410,493,422,479,421,472,431,467,440,463,458,469,472,462,483,455,491,460,495,460,509,472,517,477,531,474,541,482,540,479,551,481,563,485,570,492,566,498,575,505,562,496,551,494,560,491,547,489,538,495,539,507,524,501,545,510,545,516,552,528,544,531,557,534,567,543,568,550,559,554,564,558,559,556,573,564,580,573,568,582,559,575,540,565,554,548,548,551,538,551,523,558,527,569,531,566,516,578,526,589,530,592,546,596,524,601,517,616,511,620,505,636,494,625,481,615,472,617,462,604,460,590,472,562,466,562,457,549,458,527,453,529,447,522,429,510,431,499,420" shape="poly">
+                    <area target="_self" alt="광주" title="광주" href="Gwangju.html" coords="355,496,352,509,358,505,358,512,366,516,376,515,384,517,392,513,401,505,388,501,384,493,375,498,365,489" shape="poly">
+                </map>
+                </map>
+                </div>
+            </section>
+            <aside class="info-box">
+                <div class="container">
+                    <h1>맛집 웹페이지</h1>
+                    <label for="location">위치를 선택하세요:</label>
+                    <select id="location" onchange="locationChange(this)">
+                        <option value="">--선택--</option>
+                        <option value="Seoul.html">서울특별시</option>
+                        <option value="Incheon.html">인천광역시</option>
+                        <option value="Gyeonggi-do.html">경기도</option>
+                        <option value="Gangwon-do.html">강원도</option>
+                        <option value="Chungcheongnam-do.html">충청남도</option>
+                        <option value="Sejong.html">세종특별자치시</option>
+                        <option value="Daejeon.html">대전광역시</option>
+                        <option value="Chungcheongbuk-do.html">충청북도</option>
+                        <option value="Gyeongsangbuk-do.html">경상북도</option>
+                        <option value="Daegu.html">대구광역시</option>
+                        <option value="Jeollabuk-do.html">전라북도</option>
+                        <option value="Jeollanam-do.html">전라남도</option>
+                        <option value="Gwangju.html">광주광역시</option>
+                        <option value="Gyeongsangnam-do.html">경상남도</option>
+                        <option value="Ulsan.html">울산광역시</option>
+                        <option value="Busan.html">부산광역시</option>
+                        <option value="Jeju-do.html">제주도</option>
+                    </select>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div id="address">
+                작업자 : 공유빈, 김가현 
+            </div>
+            <div id="customer">
+                이메일 : ggahyeon445@gmail.com
+            </div>
+        </footer>
+    
+    
+        <script>
+            function locationChange(select) {
+                if (select.value) {
+                    window.location.href = select.value;
+                }
+            }
+        </script>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                우리시의 맛집을 추천합니다
+            </div>
+            <div class="popup-buttons">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxoGzfigl9n5Ndciomc6d90f_JobbuZci7Ay2ovs8r_K2nKw/viewform?usp=sf_link" target="_blank" class="popup-button survey-button">설문조사 하러가기</a>
+                <button class="popup-button close-button" onclick="closePopup()">다시 보지 않기</button>
+            </div>
+        </div>
+    
+        <script>
+            // 팝업창을 보여주는 함수
+            function showPopup() {
+                document.getElementById('popup').classList.add('show');
+            }
+    
+            // 팝업창을 닫는 함수
+            function closePopup() {
+                document.getElementById('popup').classList.remove('show');
+            }
+    
+            // 페이지가 로드될 때 팝업을 보여줌
+            window.onload = function() {
+                showPopup();
+            };
+        </script>
+    </body>
+</html>

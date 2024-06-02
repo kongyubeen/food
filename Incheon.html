@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인천광역시의 맛집</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>인천광역시의 맛집</h1>
+    <p><label for="district">지역을 선택하세요:</label></p>
+    <ul>
+    <li><a href="#강화군">강화군</a></li>
+    <li><a href="#부평구">부평군</a></li>
+    </ul>
+    <button onclick="scrollToTop()" id="scrollToTopButton" title="위로 이동">⇑</button>
+
+<script>
+  // 페이지가 일정 부분 이상 스크롤되면 버튼을 표시
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollToTopButton").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopButton").style.display = "none";
+    }
+  }
+
+  // 버튼 클릭 시 맨 위로 이동
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+<hr><br><h4>사진을 누르면 네이버 페이지로 이동합니다.</h4><br><br>
+<p><h2 id="강화군">강화군 맛집</h2>
+<ul>
+    <li>&nbsp;&nbsp;등나무 가든<br>
+        <a href="https://map.naver.com/p/search/%EB%93%B1%EB%82%98%EB%AC%B4%20%EA%B0%80%EB%93%A0/place/11640082?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240219_137%2F1708321867324FLHtL_JPEG%2FIMG_4285.jpeg" width="150" height="100"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;장어마을<br>
+        <a href="https://map.naver.com/p/entry/place/11861969?c=15.00,0,0,0,dh" target="_blank"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240416_68%2F1713248469238wo15a_JPEG%2FKakaoTalk_20240416_151404782_05.jpg" width="150" height="100"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;강화손칼국수 본점<br>
+        <a href="https://map.naver.com/p/entry/place/251540755?c=15.00,0,0,0,dh" target="_blank"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240517_134%2F1715919640254GEyKH_JPEG%2F2.jpg" width="150" height="100"></a>
+    </li><br>
+</ul></p><br><br><br>
+
+<p><h2 id="부평구">부평구 맛집</h2>
+    <ul>
+        <li>&nbsp;&nbsp;배두둑마을<br>
+            <a href="https://map.naver.com/p/entry/place/21398854?c=15.00,0,0,0,dh" target="_blank"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA1MjBfMjUz%2FMDAxNzE2MTY1OTE5OTE5.loS5y8jwl7QuhpUML0PVLS5enBpRv-yeqlzD6RAq81Eg.wzXoN90oD1F8eeeRJoZpGBXvx_d2ENwyLJZKSvT58Xkg.JPEG%2F20240519_122430.jpg.jpg%3Ftype%3Dw1500_60_sharpen" width="150" height="100"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;피플즈<br>
+            <a href="https://map.naver.com/p/entry/place/36184363?c=15.00,0,0,0,dh" target="_blank"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20171215_255%2F1513329234488HnlDz_JPEG%2FwZjWXph1H6rL7v_6LQJhq3iJ.jpeg.jpg" width="150" height="100"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;하나비<br>
+            <a href="https://map.naver.com/p/search/%ED%95%98%EB%82%98%EB%B9%84/place/1083860349?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240315_28%2F17104679371971dkJa_JPEG%2FKakaoTalk_20240312_175644712.jpg" width="150" height="100"></a>
+        </li><br>
+    </ul></p><br><br><br>
+</body>
+</html>

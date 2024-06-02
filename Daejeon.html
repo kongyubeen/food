@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전광역시의 맛집</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<br><h4>사진을 누르면 네이버 페이지로 이동합니다.</h4><br><br>
+<hr>
+<p><h2 id="대전광역시">대전광역시 맛집</h2>
+<ul>
+    <li>&nbsp;&nbsp;성심당 본점<br>
+        <a href="https://map.naver.com/p/entry/place/11871325?c=15.00,0,0,0,dh" target="_blank"><img src="Daejeon/Daejeon1.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;하나칼국수<br>
+        <a href="https://map.naver.com/p/entry/place/1675511254?c=15.00,0,0,0,dh" target="_blank"><img src="Daejeon/Daejeon2.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;복수분식 본점<br>
+        <a href="https://map.naver.com/p/entry/place/1144624069?c=15.00,0,0,0,dh" target="_blank"><img src="Daejeon/Daejeon3.png"></a>
+    </li><br>
+</ul></p><br><br><br>
+<button onclick="scrollToTop()" id="scrollToTopButton" title="위로 이동">⇑</button>
+
+<script>
+  // 페이지가 일정 부분 이상 스크롤되면 버튼을 표시
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollToTopButton").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopButton").style.display = "none";
+    }
+  }
+
+  // 버튼 클릭 시 맨 위로 이동
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+</body>
+</html>

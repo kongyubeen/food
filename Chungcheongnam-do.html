@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>충청남도의 맛집</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>충청남도의 맛집</h1>
+    <p><label for="district">지역을 선택하세요:</label></p>
+    <ul>
+    <li><a href="#부여군">부여군</a></li>
+    <li><a href="#논산시">논산시</a></li>
+    <li><a href="#태안군">태안군</a></li>
+</ul>
+<button onclick="scrollToTop()" id="scrollToTopButton" title="위로 이동">⇑</button>
+
+<script>
+  // 페이지가 일정 부분 이상 스크롤되면 버튼을 표시
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollToTopButton").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopButton").style.display = "none";
+    }
+  }
+
+  // 버튼 클릭 시 맨 위로 이동
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+<hr><br><h4>사진을 누르면 네이버 페이지로 이동합니다.</h4><br><br>
+<p><h2 id="부여군">부여군 맛집</h2>
+    
+<ul>
+    <li>&nbsp;&nbsp;시골 통닭<br>
+        <a href="https://map.naver.com/p/entry/place/13427321?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Chungcheongnam-do/Buyeo-gun1.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;사비면옥<br>
+        <a href="https://map.naver.com/p/entry/place/1621273398?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Chungcheongnam-do/Buyeo-gun2.png"></a>
+    </li><br>
+    <li>&nbsp;&nbsp;배꼽<br>
+        <a href="https://map.naver.com/p/entry/place/1882198179?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Chungcheongnam-do/Buyeo-gun3.png"></a>
+    </li><br>
+</ul></p><br><br><br>
+
+<p><h2 id="논산시">논산시 맛집</h2>
+    <ul>
+        <li>&nbsp;&nbsp;반월소바<br>
+            <a href="https://map.naver.com/p/entry/place/32372736?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Chungcheongnam-do/Nonsan-si1.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;원산면옥<br>
+            <a href="https://map.naver.com/p/entry/place/1377234810?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Chungcheongnam-do/Nonsan-si2.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;강경해물칼국수<br>
+            <a href="https://map.naver.com/p/entry/place/17344234?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Chungcheongnam-do/Nonsan-si3.png"></a>
+        </li><br>
+    </ul></p><br><br><br>
+
+<p><h2 id="태안군">태안군 맛집</h2>
+    <ul>
+        <li>&nbsp;&nbsp;전통딴뚝칼국수<br>
+            <a href="https://map.naver.com/p/entry/place/37450230?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Chungcheongnam-do/Taean-gun1.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;꽃지원조꽃게집<br>
+            <a href="https://map.naver.com/p/entry/place/31139780?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Chungcheongnam-do/Taean-gun2.png"></a>
+        </li><br>
+        <li>&nbsp;&nbsp;딴뚝통나무집식당<br>
+            <a href="https://map.naver.com/p/entry/place/13063564?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Chungcheongnam-do/Taean-gun3.png"></a>
+        </li><br>
+    </ul></p><br><br><br>
+</body>
+</html>
