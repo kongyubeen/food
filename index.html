@@ -131,37 +131,33 @@
         padding: 20px;
         border: 1px solid #ccc;
     }
-    .map img {
-        width: 100%;
-         height: auto;
-        display: block;
-    }
 
     /* 휴대폰 화면에서 aside가 section 아래로 이동 */
     @media (max-width: 768px) {
-        .container {
-            padding: 15px;
+        .header, .main, .footer {
+            padding: 10px;
+            margin: 5px 0;
         }
-        footer {
-                flex-direction: column;
-                align-items: flex-start;
+        .container {
+                padding: 5px;
             }
 
-            #customer {
-                margin-top: 10px;
+            .map img {
+                width: 100%;
+                height: auto;
             }
         main {
             flex-direction: column; /* 가로 배치로 변경 */
         }
 
         section {
-            flex: 2;
-            height: 10px;
-            margin-bottom: 20px;
+            flex: 2; /* 섹션이 더 넓도록 설정 */
+            height: auto;
+            margin-bottom: 20px; /* 오른쪽 여백 추가 */
         }
 
         aside {
-            flex: 1; 
+            flex: 1; /* 휴대폰 화면에서는 aside가 섹션보다 더 좁게 설정 */
             margin-top: 20px; /* aside 위 여백 추가 */
         }
     }
@@ -217,6 +213,7 @@
                     <area target="_self" alt="제주도" title="제주도" href="Jeju-do.html" coords="320,719,334,718,349,718,356,724,361,734,359,742,353,751,339,753,325,754,307,756,300,752,290,756,281,753,274,740,284,729,296,722,308,722" shape="poly">
                     <area target="_self" alt="경남" title="경남" href="Gyeongsangnam-do.html" coords="498,410,493,422,479,421,472,431,467,440,463,458,469,472,462,483,455,491,460,495,460,509,472,517,477,531,474,541,482,540,479,551,481,563,485,570,492,566,498,575,505,562,496,551,494,560,491,547,489,538,495,539,507,524,501,545,510,545,516,552,528,544,531,557,534,567,543,568,550,559,554,564,558,559,556,573,564,580,573,568,582,559,575,540,565,554,548,548,551,538,551,523,558,527,569,531,566,516,578,526,589,530,592,546,596,524,601,517,616,511,620,505,636,494,625,481,615,472,617,462,604,460,590,472,562,466,562,457,549,458,527,453,529,447,522,429,510,431,499,420" shape="poly">
                     <area target="_self" alt="광주" title="광주" href="Gwangju.html" coords="355,496,352,509,358,505,358,512,366,516,376,515,384,517,392,513,401,505,388,501,384,493,375,498,365,489" shape="poly">
+                </map>
                 </map>
                 </div>
             </section>

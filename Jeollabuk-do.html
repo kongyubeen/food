@@ -17,25 +17,20 @@
 <hr><br><h4>사진을 누르면 네이버 페이지로 이동합니다.</h4><br><br>
 <p><h2 id="전주시">전주시 맛집</h2>
     <button onclick="scrollToTop()" id="scrollToTopButton" title="위로 이동">⇑</button>
-
-<script>
-  // 페이지가 일정 부분 이상 스크롤되면 버튼을 표시
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("scrollToTopButton").style.display = "block";
-    } else {
-      document.getElementById("scrollToTopButton").style.display = "none";
-    }
-  }
-
-  // 버튼 클릭 시 맨 위로 이동
-  function scrollToTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-</script>
+    <button onclick="navigateToSite()" id="navigateButton" title="Go to Example">🏠</button>
+    
+    <script>
+      // 버튼 클릭 시 맨 위로 이동
+      function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    
+      // 버튼 클릭 시 example.com으로 이동
+      function navigateToSite() {
+        window.location.href = "index.html";
+      }
+    </script>
 <ul>
     <li>&nbsp;&nbsp;아카시아<br>
         <a href="https://map.naver.com/p/entry/place/1137777642?entry=psb&placePath=%2Fhome&c=15.00,0,0,0,dh" target="_blank"><img src="Jeollabuk-do/Jeonju-si1.png"></a>

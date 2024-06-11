@@ -92,21 +92,32 @@ hr {
         width: 100%; /* 작은 화면에서는 한 줄에 하나씩 표시 */
     }
 }
-#scrollToTopButton {
-    display: none;
+#scrollToTopButton, #navigateButton {
+    display: block; /* 버튼 항상 표시 */
     position: fixed;
-    bottom: 20px;
-    right: 20px;
     z-index: 99;
+    font-size: 18px;
     border: none;
     outline: none;
-    background-color: #007bff;
+    background-color: #555;
     color: white;
     cursor: pointer;
-    padding: 25px;
-    border-radius: 50%;
+    padding: 20px; /* 버튼 크기 증가 */
+    border-radius: 50%; /* 원 모양 */
+    text-align: center;
   }
-
+  #scrollToTopButton {
+    bottom: 80px; /* navigateButton 위에 위치 */
+    right: 30px;
+  }
+  #navigateButton {
+    bottom: 20px;
+    right: 30px;
+    background-color: #007bff;
+  }
   #scrollToTopButton:hover {
+    background-color: #333;
+  }
+  #navigateButton:hover {
     background-color: #0056b3;
   }

@@ -68,23 +68,20 @@
             <a href="https://map.naver.com/p/entry/place/17224708?entry=psb&placePath=%2Fhome" target="_blank"><img src="jeonnampic/boseong3.png"></a>
         </li><br>
     </ul></p><br><br><br>
-    <script>
-        // 페이지가 일정 부분 이상 스크롤되면 버튼을 표시
-        window.onscroll = function() {scrollFunction()};
-      
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("scrollToTopButton").style.display = "block";
-          } else {
-            document.getElementById("scrollToTopButton").style.display = "none";
-          }
-        }
-      
-        // 버튼 클릭 시 맨 위로 이동
-        function scrollToTop() {
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-      </script>
+    <button onclick="scrollToTop()" id="scrollToTopButton" title="위로 이동">⇑</button>
+<button onclick="navigateToSite()" id="navigateButton" title="Go to Example">🏠</button>
+
+<script>
+  // 버튼 클릭 시 맨 위로 이동
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+  // 버튼 클릭 시 example.com으로 이동
+  function navigateToSite() {
+    window.location.href = "index.html";
+  }
+</script>
 </body>
 </html>
